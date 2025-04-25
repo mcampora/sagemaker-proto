@@ -4,6 +4,9 @@ This repo contains script that will help you setup a SageMaker domain and produc
 
 The goal is to demonstrate how 2 teams can collaborate using SageMaker, one team importing an existing table in its project and publishing it in the catalog, the other team subscribing to this asset and querying it from another account.  
 
+![Resources](./sagemaker-proto.png)
+
+
 SageMaker Unified Studio relies on DataZone API.  
 The UI/console is orchestrating a lot of calls to the API and there's not much existing material describing these workflows.  
 I sniffed the UI/console calls to build this example, I'm sure there's a better approach in some areas, that's the best I was able to figure out so far.  
@@ -73,3 +76,4 @@ Resources left behind:
 - S3 buckets for the domain and environments
 - IAM roles for the domain and environments
 - RAM shared resources
+- LakeFormation permissions and administrators
